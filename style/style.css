@@ -1,1 +1,74 @@
-/*estilos*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+  --primary-color: #04146c;
+  --secundary-color: #0a2ff1;
+
+  --font-primary: "Mulish", sans-serif;
+
+  --size-28pt: 37px;
+  --size-16pt: 22px;
+  --size-14pt: 20px;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+
+}
+
+main {
+
+  margin: 0 auto;
+}
+
+header > h1 {
+  font-size: var(--size-28pt);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-black);
+  font-family: var(--font-primary);
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 0rem;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto > h2 {
+  text-transform: uppercase;
+  font-size: var(--size-16pt);
+  font-weight: var(--font-weight-bold);
+  color: var(--secundary-color);
+  margin: 1rem 0rem;
+}
+
+.texto > p {
+  width: 40vw;
+  margin-top: 0 0 0 70px;
+  font-size: var(--size-14pt);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color);
+}
+
+.imagen > img {
+  width: 55px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
