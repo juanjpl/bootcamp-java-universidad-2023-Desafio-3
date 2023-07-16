@@ -1,1 +1,109 @@
 /*estilos*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root {
+
+    --primary-color: #04146c;
+    --secundary-color: #414166;
+    --links-color:#0a2ff1;
+
+    --font-primary:'Mulish', sans-serif;
+
+    --size-14pt: 19px;
+    --size-15pt: 20px;
+    --size-18pt: 24px;
+  
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-align: center;
+    font-family: var(--font-primary);
+
+}
+
+body{
+  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form{
+ 
+    width: 600px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+form>h1{
+  
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-bold);
+    color:var(--primary-color);
+    margin:2rem 0;
+}
+
+
+input,
+button,
+hr,
+a{
+    width: 500px;
+    height: 50px;
+    text-align: left;
+    margin:0 auto 10px auto;
+    padding:10px;
+
+}
+
+a,
+button{
+    text-align: center;
+}
+
+input{
+    font-size: var(--size-14pt);
+    font-weight: var(--font-weight-semibold);
+    color:var(--secundary-color);
+    border:1px solid #414166;
+}
+
+button{
+    background-color: var(--links-color);
+    font-size: var(--size-15pt);
+    font-weight: var(--font-weight-semibold);
+    color:#ffffff;
+}
+
+hr{
+    height: 2px;
+    padding:0px;
+    margin:0.5rem auto;
+}
+
+a{
+
+    font-size: var(--size-14pt);
+    font-weight: var(--font-weight-regular);
+    color:var(--links-color);
+    text-decoration: none;
+   margin:0 auto;
+    height: auto;
+}
