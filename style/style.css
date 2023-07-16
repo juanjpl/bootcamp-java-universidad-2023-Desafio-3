@@ -25,30 +25,41 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: center;
+  
 
 }
 
-main {
-
+main,
+header {
+    display: flex;
+    flex-direction: column;
   margin: 0 auto;
 }
 
+header{
+    width: calc(40vw + 70px);
+    border:1px solid rgb(85, 151, 26);
+}
 header > h1 {
   font-size: var(--size-28pt);
   color: var(--primary-color);
   font-weight: var(--font-weight-black);
   font-family: var(--font-primary);
+ 
+
 }
 .group {
   display: flex;
   flex-direction: row;
   margin: 1.5rem 0rem;
+  border:1px solid red;
 }
 
 .texto {
   display: flex;
   flex-direction: column;
+  border:1px solid rgb(0, 136, 255);
 }
 
 .texto > h2 {
@@ -57,6 +68,7 @@ header > h1 {
   font-weight: var(--font-weight-bold);
   color: var(--secundary-color);
   margin: 1rem 0rem;
+  border:1px solid rgb(161, 16, 137);
 }
 
 .texto > p {
@@ -65,10 +77,52 @@ header > h1 {
   font-size: var(--size-14pt);
   font-weight: var(--font-weight-regular);
   color: var(--primary-color);
+  border:1px solid rgb(161, 16, 137);
 }
 
 .imagen > img {
   width: 55px;
   margin-right: 15px;
   vertical-align: middle;
+  border:1px solid rgb(172, 23, 30);
 }
+
+.group2{
+    display: flex;
+    flex-direction: column;
+    width: calc(40vw + 70px);
+    border:1px solid rgb(161, 16, 137);
+}
+
+.imagen2{
+    display: flex;
+    flex-direction: row;
+    height:max-content;
+ align-items: center;
+ border:1px solid rgb(172, 23, 30);
+ 
+  
+}
+
+
+
+.group2>.imagen2>img{
+    width: 55px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border:1px solid rgb(172, 23, 30);
+}
+
+.group2>.imagen2>h2{
+   
+    height: min-content;
+    border:1px solid rgb(161, 16, 137);
+
+}
+
+.group2>.texto2>p{
+    margin-left:70px;
+    border:1px solid rgb(172, 23, 30);
+   
+}
+
