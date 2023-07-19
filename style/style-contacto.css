@@ -1,0 +1,171 @@
+/*estilos*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #04146c;
+  --secundary-color: #0a2ff1;
+
+  --font-Roboto-Slab: "Roboto Slab", serif;
+  --font-Roboto: "Roboto", sans-serif;
+
+  --size-18pt: 24px;
+  --size-26pt: 35px;
+  --size-72pt: 96px;
+  --size-34pt: 45px;
+  --size-23pt: 31px;
+  --size-24pt: 32px;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main,
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+nav {
+  background-color: #ffffff;
+  height: 15%;
+  flex-direction: row;
+  padding: 1.5em 0;
+  justify-content: left;
+  border-top: 20px solid var(--secundary-color);
+}
+
+#logo-nav {
+  width: 5%;
+  margin: 0 3em;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+nav > ul > li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3em;
+  justify-content: center;
+}
+
+nav > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  text-decoration: none;
+  text-decoration-line: none;
+  font-family: var(--font-Roboto);
+  font-size: var(--size-18pt);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color);
+}
+
+.activo {
+  font-weight: var(--font-weight-bold);
+}
+
+main {
+
+  height: max-content;
+  justify-content: center;
+}
+
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+ 
+}
+
+.contenedor-formulario>form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+   padding:0 50px;
+}
+
+.contenedor-formulario>form>p{
+   font-family: var(--font-Roboto-Slab);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--size-34pt);
+   color:#2c00cc;
+   margin:10px 0;
+
+}
+
+.contenedor-formulario>form>h1,
+.contenedor-formulario>form>label{
+    font-family: var(--font-Roboto);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-23pt);
+    color:var(--primary-color);
+    margin:10px 0;
+    
+ }
+
+ .contenedor-formulario>form>label{
+    font-weight: var(--font-weight-bold);
+    
+ }
+
+ .contenedor-formulario>form>label>span{
+color:red;
+ }
+
+ .contenedor-formulario>form>input{
+    height: 50px;
+    width: 500px;
+    
+ }
+
+ .contenedor-formulario>form>textarea{
+    height: 100px;
+    width: 500px;
+    
+ }
+
+ .contenedor-formulario>form>.botonera{
+  margin:1rem 0;
+    
+ }
+
+ .contenedor-formulario>form>.botonera>button{
+font-size: var(--size-24pt);
+font-weight: var(--font-weight-bold);
+color:#ffffff;
+border-radius: 10px;
+padding:5px 50px;
+      
+   }
+
+   #boton-naranja{
+    background-color: #f98500;
+
+   }
+   #boton-azul{
+    background-color: #2c00cc;
+    margin-left: 2rem;
+   }
