@@ -1,1 +1,135 @@
 /*estilos*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #04146c;
+  --secundary-color: #0a2ff1;
+
+  --font-Roboto-Slab: 'Roboto Slab', serif;
+  --font-Roboto: 'Roboto', sans-serif;
+
+  --size-18pt: 24px;
+  --size-26pt: 35px;
+  --size-72pt: 96px;
+
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main,
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-position: bottom;
+   
+}
+
+nav{
+    background-color: #ffffff;
+   height:15%;
+   flex-direction: row;
+   padding:1.5em 0;
+   justify-content: left;
+   border-top:20px solid var(--secundary-color);
+
+ 
+}
+
+#logo-nav{
+    width: 5%;
+    margin:0 3em;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  
+}
+
+nav>ul>li{
+    display: flex;
+    flex-direction: column;
+    padding:0 3em;
+    justify-content: center;
+
+}
+
+nav>ul>li>a{
+    display: flex;
+    flex-direction: row;
+    height:max-content;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-family: var(--font-Roboto);
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-regular);
+    color:var(--primary-color);
+    
+}
+
+
+.activo{
+    font-weight: var(--font-weight-bold);
+}
+
+main{
+  height: 100vh;
+}
+
+.contenedor-cabecera{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 35%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contenedor-cabecera>h1{
+    font-family: var(--font-Roboto-Slab);
+    font-size: var(--size-72pt);
+    font-weight: var(--font-weight-bold);
+    color:var(--secundary-color);
+}
+
+.contenedor-cabecera>p{
+    font-family: var(--font-Roboto);
+    font-size: var(--size-26pt);
+    font-weight: var(--font-weight-regular);
+    color:var(--primary-color);
+    padding:1em;
+}
+
+.contenedor-imagen{
+    background-image: url(../src/M5-Desafío1-img.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    height:70%;
+}
